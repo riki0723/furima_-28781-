@@ -85,8 +85,8 @@
 | todouhuken   | integer    | null: false                    |
 | sichouson    | string     | null: false                    |
 | banchi       | string     | null: false                    |
-| bilding      | string     | null: false                    |
-| phonenumber  | int        | null: false                    |
+| bilding      | string     |                                |
+| phonenumber  | string     | null: false                    |
 | buy          | references | null: false, foreign_key: true |
 
 
