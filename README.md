@@ -10,7 +10,7 @@
 | familyname | string | null: false |
 | firstyname | string | null: false |
 | kana       | string | null: false |
-| date       | string | null: false |
+| berthday   | date   | null: false |
 
 
 ### Association
@@ -26,12 +26,12 @@
 | --------- | ---------- | ------------------------------ |
 | image     | string     | null: false                    |
 | name      | string     | null: false                    |
-| text      | string     | null: false                    |
-| category  | string     | null: false                    |
-| status    | string     | null: false                    |
-| integer   | string     | null: false                    |
-| area      | string     | null: false                    |
-| days      | string     | null: false                    |
+| explation | text       | null: false                    |
+| category  | integer    | null: false                    |
+| status    | integer    | null: false                    |
+| integer   | integer    | null: false                    |
+| area      | integer    | null: false                    |
+| days      | integer    | null: false                    |
 | price     | string     | null: false                    |
 | user      | references | null: false, foreign_key: true |
 
