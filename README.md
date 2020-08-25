@@ -8,7 +8,8 @@
 | email    | string | null: false |
 | password | string | null: false |
 | name     | string | null: false |
-| berthday | string | null: false |
+| kana     | string | null: false |
+| date     | string | null: false |
 
 
 ### Association
@@ -24,20 +25,20 @@
 | --------- | ------ | ----------- |
 | image     | string | null: false |
 | imagename | string | null: false |
-| explation | string | null: false |
+| text      | string | null: false |
 | category  | string | null: false |
 | status    | string | null: false |
-| charges   | string | null: false |
+| integer   | string | null: false |
 | area      | string | null: false |
 | days      | string | null: false |
 | price     | string | null: false |
-| days      | string | null: false |
+
 
 
 ### Association
-- belongs_to :users
+- belongs_to :user
 - has_many :coments
-- has_one :buys
+- has_one :buy
 
 
 
@@ -49,8 +50,8 @@
 |          | string | null: false |
 
 ### Association
-- belongs_to :users
-- belongs_to :items
+- belongs_to :user
+- belongs_to :item
 
 
 
@@ -63,5 +64,5 @@
 | adressnumber | string | null: false |
 
 ### Association
-- belongs_to :users
-- belongs_to :items
+- belongs_to :user
+- belongs_to :item
