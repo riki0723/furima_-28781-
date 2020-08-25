@@ -8,8 +8,9 @@
 | email      | string | null: false |
 | password   | string | null: false |
 | familyname | string | null: false |
-| firstyname | string | null: false |
-| kana       | string | null: false |
+| firstname  | string | null: false |
+| familykana | string | null: false |
+| firstkana  | string | null: false |
 | berthday   | date   | null: false |
 
 
@@ -32,7 +33,7 @@
 | integer   | integer    | null: false                    |
 | area      | integer    | null: false                    |
 | days      | integer    | null: false                    |
-| price     | string     | null: false                    |
+| price     | integer    | null: false                    |
 | user      | references | null: false, foreign_key: true |
 
 
@@ -80,8 +81,12 @@
 
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
-| address      | string     | null: false                    |
 | adressnumber | string     | null: false                    |
+| todouhuken   | integer    | null: false                    |
+| sichouson    | string     | null: false                    |
+| banchi       | string     | null: false                    |
+| bilding      | string     | null: false                    |
+| phonenumber  | int        | null: false                    |
 | buy          | references | null: false, foreign_key: true |
 
 
