@@ -30,7 +30,7 @@
 | explation | text       | null: false                    |
 | category  | integer    | null: false                    |
 | status    | integer    | null: false                    |
-| integer   | integer    | null: false                    |
+| delivery  | integer    | null: false                    |
 | area      | integer    | null: false                    |
 | days      | integer    | null: false                    |
 | price     | integer    | null: false                    |
