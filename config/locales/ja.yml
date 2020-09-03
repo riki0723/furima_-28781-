@@ -8,4 +8,16 @@ ja:
        familykana: 苗字のカナ
        firstkana: 名前のカナ
        berthday: 誕生日
+     item:
+       image: 商品の画像
+       name: 商品名
+       explation: 商品の説明
+       days_id: 発送までの日時
+       price_id: 金額
+       category_id: カテゴリー
+       status_id: 商品の状態
+       area_id: 発送までの日数
+       delivery_id: 配送料の負担
+
+
 
