@@ -3,6 +3,12 @@ class Item < ApplicationRecord
   belongs_to_active_hash :category
   belongs_to :user
   has_one_attached :image
+  belongs_to_active_hash :status
+  belongs_to_active_hash :delivery
+  belongs_to_active_hash :area
+  belongs_to_active_hash :days
+
+
 
   validates :image, :name, :explation, :category_id, :status_id, :delivery_id, :area_id, :days_id, presence: true
 
