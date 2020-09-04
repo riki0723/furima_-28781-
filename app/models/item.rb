@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :category
+  has_one_attached :image
 
   validates :image, :name, :explation, :category_id, :status_id, :delivery_id, :area_id, :days_id, presence: true
 
