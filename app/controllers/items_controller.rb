@@ -10,6 +10,10 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
 
+  def show
+    @item = Item.find(params[:id])
+  end
+
   def create
     @item = Item.new(item_params)
     if @item.valid?
@@ -25,5 +29,6 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:image, :name, :explation, :category_id, :status_id, :delivery_id, :area_id, :days_id, :price_id)
     .merge(user_id: current_user.id)
   end
+
 
 end
