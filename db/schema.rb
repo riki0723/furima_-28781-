@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2020_09_09_045815) do
 
   create_table "mailings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "adressnumber"
-    t.integer "todouhuken_id"
+    t.integer "area_id"
     t.string "sichouson"
     t.string "banchi"
     t.string "bilding"
