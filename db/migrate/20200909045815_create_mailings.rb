@@ -3,7 +3,7 @@ class CreateMailings < ActiveRecord::Migration[6.0]
     create_table :mailings do |t|
 
       t.string :adressnumber
-      t.integer :todouhuken_id
+      t.integer :area_id
       t.string :sichouson
       t.string :banchi
       t.string :bilding
