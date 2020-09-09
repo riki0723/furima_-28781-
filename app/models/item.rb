@@ -7,6 +7,7 @@ class Item < ApplicationRecord
   belongs_to_active_hash :delivery
   belongs_to_active_hash :area
   belongs_to_active_hash :days
+  has_one :order
 
 
 

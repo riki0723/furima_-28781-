@@ -41,7 +41,7 @@
 ### Association
 - belongs_to :user
 - has_many :coments
-- has_one :buy
+- has_one :order
 
 
 
@@ -69,6 +69,7 @@
 | item         | references | null: false, foreign_key: true |
 
 
+
 ### Association
 - belongs_to :user
 - belongs_to :item
@@ -91,4 +92,4 @@
 
 
 ### Association
-- belongs_to :buy
+- belongs_to :order
