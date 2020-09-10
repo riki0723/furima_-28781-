@@ -8,6 +8,7 @@ class CreateMailings < ActiveRecord::Migration[6.0]
       t.string :banchi ,null: false
       t.string :bilding ,null: false
       t.string :phonenumber ,null: false
+      t.references :order, null: false, foreign_key: true
       
 
       t.timestamps
