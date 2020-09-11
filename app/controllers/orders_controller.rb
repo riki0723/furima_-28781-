@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   def index
     @item = Item.find(params[:item_id])
+    @donation = OrderDonation.new(donation_params) 
     
   end
 
