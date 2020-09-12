@@ -3,7 +3,7 @@ class OrderDonation
   include ActiveModel::Model
   attr_accessor :adressnumber, :area_id, :sichouson, :banchi, :bilding,:order_id, :phonenumber, :user_id, :item_id, :token
 
-  validates :adressnumber, :area_id, :sichouson, :banchi,:item_id, :phonenumber, :token, presence: true
+  validates :adressnumber, :area_id, :sichouson, :banchi, :item_id, :user_id, :phonenumber, :token, presence: true
   validates :area_id ,numericality: { other_than: 1 }
   
   with_options presence: true, format: { with: /\A\d{3}[-]\d{4}\z/, message: 'は郵便番号（「-」を含む且つ7桁）で入力してください' } do
