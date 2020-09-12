@@ -41,7 +41,7 @@
 ### Association
 - belongs_to :user
 - has_many :coments
-- has_one :buy
+- has_one :order
 
 
 
@@ -61,12 +61,13 @@
 
 
 
-## buys テーブル
+## orders テーブル
 
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
 | user         | references | null: false, foreign_key: true |
 | item         | references | null: false, foreign_key: true |
+
 
 
 ### Association
@@ -91,4 +92,4 @@
 
 
 ### Association
-- belongs_to :buy
+- belongs_to :order
